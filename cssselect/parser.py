@@ -379,7 +379,7 @@ _id_re = re.compile(r'^[ \t\r\n\f]*([a-zA-Z]*)#([a-zA-Z0-9_-]+)[ \t\r\n\f]*$')
 
 # foo.bar or .bar
 _class_re = re.compile(
-    r'^[ \t\r\n\f]*([a-zA-Z]*)\.([a-zA-Z][a-zA-Z0-9_-]*)[ \t\r\n\f]*$')
+    r'^[ \t\r\n\f]*([a-zA-Z\.]*)\.([a-zA-Z0-9][a-zA-Z0-9_-]*)[ \t\r\n\f]*\$*\%*$')
 
 
 def parse(css):
